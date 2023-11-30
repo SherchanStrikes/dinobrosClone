@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import BottomNav from "./components/BottomNav/BottomNav";
+import Navbar from "./components/Navbar/Navbar";
+import Slider from "./components/Slider/Slider";
+import './index.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+
+      {/* Carousel slide */}
+      <Slider />
+      {/* We Make */}
+      {/* React slick autoslide, focus when hovered */}
+      {/* Card Title */}
+      {/* Cards with scrollevent slide motion (framer motion) */}
+      {/* Footer */}
+      {/* Only triggers in mobile screen */}
+      <BottomNav />
     </div>
   );
 }
